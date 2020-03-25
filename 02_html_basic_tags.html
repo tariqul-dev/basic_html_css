@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form practice</title>
+  </head>
+  <body>
+    <table border="0" width="600px" align="center">
+      <tr>
+        <td height="50px" width="600px" colspan="3">
+
+        </td>
+      </tr>
+
+      <tr>
+        <td height="700px" width="800px" colspan="3" valign="top">
+
+          <form>
+            <fieldset>
+              <legend>Registration</legend>
+
+              <fieldset>
+                <legend>Personal Information</legend>
+                <table cellpadding="5">
+                  <tr>
+                    <td>
+                      First Name
+                    </td>
+                    <td>:</td>
+                    <td>
+                      <input type="text" name="firstName" value="" autofocus required placeholder="Ex: Tariqul" autocomplete="on" list="data">
+                    </td>
+
+                    <td>Last Name</td>
+                    <td>:</td>
+                    <td>
+                      <input type="text" name="lastName" value="" placeholder="Islam" autocomplete="on">
+                    </td>
+
+                  </tr>
+
+                  <tr>
+                    <td>
+                      Father's Name
+                    </td>
+                    <td>:</td>
+                    <td>
+                      <input type="text" name="fatherName" value="" required autocomplete="on">
+                    </td>
+
+                    <td>Mother's Name</td>
+                    <td>:</td>
+                    <td>
+                      <input type="text" name="motherName" value="" required autocomplete="on">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Date of Birth</td>
+                    <td>:</td>
+                    <td>
+                      <input type="date" name="dob" value="" required>
+                    </td>
+                    <td>Country</td>
+                    <td>:</td>
+                    <td>
+                      <select name="country" required>
+                        <option value="">Select one</option>
+                        <optgroup label="Asia">
+                          <option value="bangladesh">Bangladesh</option>
+                          <option value="india">India</option>
+                          <option value="pakistan">Pakistan</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                          <option value="england">England</option>
+                          <option value="italy">Italy</option>
+                        </optgroup>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Phone No.</td>
+                    <td>:</td>
+                    <td>
+                      <input type="number" name="phoneNumber" value="" min="1300000000" max="1999999999" placeholder="01XXXXXXXXX" required autocomplete="on">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Graduate</td>
+                    <td>:</td>
+                    <td>
+                      <input type="checkbox" name="grd" value="grd">
+                    </td>
+                    <td>Post Graduate</td>
+                    <td>:</td>
+                    <td>
+                      <input type="checkbox" name="pstgrd" value="pstgrd">
+                    </td>
+                  </tr>
+                </table>
+              </fieldset><br>
+
+              <fieldset>
+                <legend>Gender</legend>
+                <table cellpadding="5">
+                  <tr>
+                    <td>Male</td>
+                    <td>:</td>
+                    <td>
+                      <input type="radio" name="gender" value="male" required>
+                    </td>
+                    <td>Female</td>
+                    <td>:</td>
+                    <td>
+                      <input type="radio" name="gender" value="female" required>
+                    </td>
+                    <td>Other</td>
+                    <td>:</td>
+                    <td>
+                      <input type="radio" name="gender" value="other" required>
+                    </td>
+                  </tr>
+                </table>
+              </fieldset><br>
+
+              <fieldset>
+                <legend>Login Information</legend>
+                <table cellpadding="5">
+                  <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td>
+                      <input type="email" name="email" value="" placeholder="tariqul@gmail.com" required autocomplete="on">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Password</td>
+                    <td>:</td>
+                    <td>
+                      <input type="password" name="password" value="" placeholder="Password" required>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Confirm</td>
+                    <td>:</td>
+                    <td>
+                      <input type="password" name="confirm" value="" placeholder="Confirm Password" required>
+                    </td>
+                  </tr>
+                </table>
+              </fieldset><br>
+              <label><b>Describe yourself:</b></label><br>
+              <textarea name="des" rows="8" cols="50"></textarea><br>
+              <input type="file" name="file" value="" accept="image/*">
+              <br><br>
+              <button type="submit" name="submit" value="">Register</button>
+
+
+            </fieldset>
+          </form>
+
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <datalist id="data">
+
+          </datalist>
+        </td>
+      </tr>
+
+    </table>
+
+  </body>
+</html>
